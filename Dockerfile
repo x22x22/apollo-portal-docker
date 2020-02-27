@@ -33,6 +33,8 @@ RUN \
 
 ADD . /apollo-portal-server/
 
+RUN chmod 755 /apollo-portal-server/scripts/startup-kubernetes.sh
+
 ENV APOLLO_PORTAL_SERVICE_NAME="service-apollo-portal-server.sre"
 
 EXPOSE 8070
